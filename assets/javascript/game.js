@@ -18,7 +18,7 @@ var crystal3 = randomNumber();
 var crystal4 = randomNumber();
 var computerCrystal = Math.floor(Math.random() * 120) + 19;
 var htmlComputerCrystal = //writes computerCrystal to html
-            "<p>Computer Crystal # " + computerCrystal + "</p>";    
+            "<p>Enemy's Number # " + computerCrystal + "</p>";    
     document.querySelector("#computerCrystal").innerHTML = htmlComputerCrystal;
 
   

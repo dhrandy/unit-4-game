@@ -1,3 +1,13 @@
+body {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('../images/background3.jpg');
+    background-size: cover;
+    background-color: #0183eb;
+    font-family: 'Pridi', serif;
+}
+
 h1 {
     font-size: 50px;
     color: white;
@@ -7,13 +17,8 @@ h1 {
     text-shadow: 2px 2px black;
 }
 
-body {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background: url('../images/background3.jpg');
-    background-size: cover;
-    background-color: #0183eb;
+h2 {
+    font-size: 30px;
 }
 
 .container {
@@ -24,16 +29,24 @@ body {
 
 #computerCrystal {
     font-size: 30px;
+    text-align: center;
 }
 
 #score {
     font-size: 20px;
 }
 
-#crystalSum {
-    float: left;
+#sum {
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
-#sum {
-    float: left;
+#hyde {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#enemy {
+    text-align: center;
 }

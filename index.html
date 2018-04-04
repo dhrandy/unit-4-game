@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,20 +26,41 @@
             <button type="button" id="restartButton">Restart</button>
             <br>
             <br>
+            <p>
+                <h2>Game Instructions</h2>
+            </p>
+            <br>
+            <p>You will be giving a random number at the start of the game. 
+
+                    <p>There are four league members below. By clicking on a league member you will add a spedific amount of points to your total score.</p>
+                    <br>
+                    <p>You win the game by matching your total score to the random number, you lose the game if  your score goes above the random number.</p>
+                    <br>
+                    <p>The  value of each league member is hidden from you until you click on it.</p>
+                    <br>
+                    <p>Each time the game starts, the game will change the value of the league members.</p>
+            <br>
+            <hr>
+            <br>
+            <p>
+                <h2 id = "enemy">The Enemy - Hyde
+                </h2>
+            </p>
+            <br>
+            <img src = "./assets/images/hyde2.jpg" id = "hyde">
+            <br>
             <p id = "computerCrystal"></p><br>
             <p id = "score"></p>
-            <br>
+            <br><br>
+            <div class = "container">
+                    <p id = "sum">Crystal Sum =</p>
+                </div>
         </div>
         <div class ="container">
             <img src = "./assets/images/hunter.jpg" id = "crystal1" class = "crystal">
             <img src = "./assets/images/vampire.jpg" id = "crystal2" class = "crystal">
             <img src = "./assets/images/immortal.jpg" id = "crystal3" class = "crystal">
             <img src = "./assets/images/thescientist.jpg" id = "crystal4" class = "crystal">
-        </div>
-
-        <div class = "container">
-            <p>Crystal Sum</p>
-            <p id = "sum"></p>
         </div>
     
 <script type="text/javascript"src= "assets/javascript/game.js"></script>         
