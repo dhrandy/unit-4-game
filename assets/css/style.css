@@ -58,7 +58,7 @@ p {
     text-align: center;
 }
 
-#goodGuys {
+.goodGuys {
     margin: 16px;
     
 }
@@ -75,7 +75,7 @@ p {
         margin: 0px;
         max-width: 100%;
     }
-    #goodGuys {
+    .goodGuys {
         float: left;
         width: 9.5em;
         padding: 5px;
