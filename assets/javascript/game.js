@@ -7,11 +7,6 @@ var clickedCyrstal4 = 0;
 var crystalScore = [];
 var sum = 0;
 var totalScore = 0;
-
-function randomNumber (){
-    Math.floor(Math.random() * 12) + 1;
-}
-
 var crystal1 = randomNumber();
 var crystal2 = randomNumber();
 var crystal3 = randomNumber();
@@ -21,6 +16,9 @@ var htmlComputerCrystal = //writes computerCrystal to html
             "<p>Enemy's Number # " + computerCrystal + "</p>";    
     document.querySelector("#computerCrystal").innerHTML = htmlComputerCrystal;
 
+    function randomNumber (){
+        Math.floor(Math.random() * 12) + 1;
+    }
   
 
     while (crystal1 == crystal2 || crystal1 == crystal3 || crystal1 == crystal4 || crystal2 == crystal1 || crystal2 == crystal3 || crystal2 == crystal4 || crystal3 == crystal1 || crystal3 == crystal2 || crystal3 == crystal4 || crystal4 == crystal1 || crystal4 == crystal2 || crystal4 == crystal3){
@@ -36,7 +34,6 @@ var htmlComputerCrystal = //writes computerCrystal to html
 
 document.querySelector("#score").innerHTML = htmlScore;
     
-
 function crystalClick(crystal){
     clickedCyrstal = crystal;
     crystalScore.push(clickedCyrstal);
@@ -47,9 +44,6 @@ function crystalClick(crystal){
       var htmlsum = //writes computerCrystal to html
             "<p>Crystal Sum = " + sum + "</p>";    
     document.querySelector("#sum").innerHTML = htmlsum;
-
-      console.log("sum =",sum);
-
       if (sum === computerCrystal) {       
         win++;
         crystalScore = [0];
@@ -62,8 +56,12 @@ function crystalClick(crystal){
         crystal3 = Math.floor(Math.random() * 12) + 1;
         crystal4 = Math.floor(Math.random() * 12) + 1;
        
+        var restartButton = document.getElementById("restartButton"); //sets the reset button variable
+restartButton.addEventListener("click", gameRestart); //listens for the click
+
+
         
-        console.log("win =",sum);
+      
                 
     } else if (sum > computerCrystal) {
         losses++;
@@ -76,31 +74,14 @@ function crystalClick(crystal){
         crystal2 = Math.floor(Math.random() * 12) + 1;
         crystal3 = Math.floor(Math.random() * 12) + 1;
         crystal4 = Math.floor(Math.random() * 12) + 1;
-        console.log("loss =",sum);
     }
     var htmlScore = //writes Score to html
     "<p>Wins: " + win + "</p>" +
 "<p>Losses: " + losses + "</p>";
 
 document.querySelector("#score").innerHTML = htmlScore;
-console.log(crystal1);
-console.log(crystal2);
-console.log(crystal3);
-console.log(crystal4);
-
-/*var restartButton = document.getElementById("restartButton"); //sets the reset button variable
-restartButton.addEventListener("click", gameRestart); //listens for the click
-
-function gameRestart() {
-    wins = 0;
-    losses = 0;
-    crystalScore = [];
-}*/
 
 };
-
-   
-   
     $("#crystal1").click(function(){
         crystalClick(crystal1);
         sum = crystalScore.reduce(function(a, b) {
@@ -124,9 +105,3 @@ function gameRestart() {
         crystalClick(crystal4);
         console.log(sum);
     });
-
-
-    console.log(crystalScore);
-
-
-
