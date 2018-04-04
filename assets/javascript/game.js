@@ -42,7 +42,7 @@ function crystalClick(crystal) {
         return a + b;
     });
     var htmlsum = //writes computerCrystal to html
-        "<p>Crystal Sum = " + sum + "</p>";
+        "<p>Gentlemens Sum = " + sum + "</p>";
     document.querySelector("#sum").innerHTML = htmlsum;
     if (sum === computerCrystal) {
         win++;
@@ -55,12 +55,6 @@ function crystalClick(crystal) {
         crystal2 = Math.floor(Math.random() * 12) + 1;
         crystal3 = Math.floor(Math.random() * 12) + 1;
         crystal4 = Math.floor(Math.random() * 12) + 1;
-
-        var restartButton = document.getElementById("restartButton"); //sets the reset button variable
-        restartButton.addEventListener("click", gameRestart); //listens for the click
-
-
-
 
     } else if (sum > computerCrystal) {
         losses++;
