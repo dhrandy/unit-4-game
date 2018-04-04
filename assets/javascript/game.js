@@ -54,6 +54,9 @@ function crystalClick(crystal){
         win++;
         crystalScore = [0];
         computerCrystal = Math.floor(Math.random() * 120) + 19;
+        var htmlComputerCrystal = //writes computerCrystal to html
+            "<p>Enemy's Number # " + computerCrystal + "</p>";    
+    document.querySelector("#computerCrystal").innerHTML = htmlComputerCrystal;
         crystal1 = Math.floor(Math.random() * 12) + 1;
         crystal2 = Math.floor(Math.random() * 12) + 1;
         crystal3 = Math.floor(Math.random() * 12) + 1;
@@ -66,6 +69,9 @@ function crystalClick(crystal){
         losses++;
         crystalScore = [0];
         computerCrystal = Math.floor(Math.random() * 120) + 19;
+        var htmlComputerCrystal = //writes computerCrystal to html
+            "<p>Enemy's Number # " + computerCrystal + "</p>";    
+    document.querySelector("#computerCrystal").innerHTML = htmlComputerCrystal;
         crystal1 = Math.floor(Math.random() * 12) + 1;
         crystal2 = Math.floor(Math.random() * 12) + 1;
         crystal3 = Math.floor(Math.random() * 12) + 1;
