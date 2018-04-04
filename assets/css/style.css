@@ -21,9 +21,15 @@ h2 {
     font-size: 30px;
 }
 
+p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 .container {
-    max-width: 960px;
-    margin:auto;
+    max-width: 80%;
+    margin-left:200px;
+    margin-right:200px;
     color: white;
 }
 
@@ -49,4 +55,39 @@ h2 {
 
 #enemy {
     text-align: center;
+}
+
+#goodGuys {
+    margin: 20px;
+    
+}
+
+@media only screen and (max-width: 640px) {
+
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 630px;
+    }
+    
+    .container {
+        margin: 0px;
+        max-width: 100%;
+    }
+    #goodGuys {
+        float: left;
+        width: 11em;
+        padding: 5px;
+        margin: 3px;
+    }
+
+    .images {
+        display: inline-block; 
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    #hyde {
+        width: 20em;
+    }
 }
