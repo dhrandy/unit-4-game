@@ -1,3 +1,39 @@
 h1 {
     font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Merriweather', serif;
+    text-shadow: 2px 2px black;
+}
+
+body {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('../images/background3.jpg');
+    background-size: cover;
+    background-color: #0183eb;
+}
+
+.container {
+    max-width: 960px;
+    margin:auto;
+    color: white;
+}
+
+#computerCrystal {
+    font-size: 30px;
+}
+
+#score {
+    font-size: 20px;
+}
+
+#crystalSum {
+    float: left;
+}
+
+#sum {
+    float: left;
 }

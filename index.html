@@ -5,6 +5,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,18 +18,27 @@
             <img src="" alt="Crystal Game" title="Crystal Game"/> 
             </div>
     </div> -->
-        <div class ="container">
+        <div id = "title">
+                <h1>The Leage of Extaordinary Gentleman Game</h1>
+        </div>
+        <div class = "container">
             <button type="button" id="restartButton">Restart</button>
             <br>
             <br>
-            <p id= "computerCrystal" ></p>
+            <p id = "computerCrystal"></p><br>
+            <p id = "score"></p>
             <br>
         </div>
-        <div class ="container crystals">
-            <img src = "./assets/images/1crystal.jpg" id = "crystal1" class = "crystal">
-            <img src = "./assets/images/2crystal.jpg" id = "crystal2" class = "crystal">
-            <img src = "./assets/images/3crystal.jpg" id = "crystal3" class = "crystal">
-            <img src = "./assets/images/4crystal.jpg" id = "crystal4" class = "crystal">
+        <div class ="container">
+            <img src = "./assets/images/hunter.jpg" id = "crystal1" class = "crystal">
+            <img src = "./assets/images/vampire.jpg" id = "crystal2" class = "crystal">
+            <img src = "./assets/images/immortal.jpg" id = "crystal3" class = "crystal">
+            <img src = "./assets/images/thescientist.jpg" id = "crystal4" class = "crystal">
+        </div>
+
+        <div class = "container">
+            <p>Crystal Sum</p>
+            <p id = "sum"></p>
         </div>
     
 <script type="text/javascript"src= "assets/javascript/game.js"></script>         
