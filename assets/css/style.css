@@ -8,15 +8,6 @@ body {
     font-family: 'Pridi', serif;
 }
 
-h1 {
-    font-size: 50px;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-family: 'Merriweather', serif;
-    text-shadow: 2px 2px black;
-}
-
 h2 {
     font-size: 30px;
 }
@@ -92,4 +83,9 @@ p {
     #hyde {
         width: 20em;
     }
+
+    .league {
+        width:23em;
+    }
+
 }
