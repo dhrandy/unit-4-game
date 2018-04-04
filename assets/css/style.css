@@ -63,7 +63,7 @@ p {
     
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 720px) {
 
     body {
         margin-left: 10px;
