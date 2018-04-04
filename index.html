@@ -7,60 +7,54 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Game</title>
 </head>
 <body>
-
-        <div align = "center" id = "title">
-                <img src = "./assets/images/title.png" class = "league">
+    <div align = "center" id = "title">
+        <img src = "./assets/images/title.png" class = "league">
+    </div>
+    <div class = "container">
+        <br>
+        <p>Welcome to The League of Extraordinary Gentlman's Game. Here you will test your extraordinary brain power. Good luck in defeating the enemy.</p>
+        <br>
+        <p>
+            <h2>Game Instructions</h2>
+        </p>
+        <br>
+        <p>You will be given the enemy's random number at the start of the game.</p>
+        <br>
+        <p>There are four league members below. By clicking on a league member you will add a spedific amount of points to your total score.</p>
+        <br>
+        <p>You win the game by matching your total score to the random number, you lose the game if your score goes above the random number. When you win or lose, the enemy will chose another random number.</p>
+        <br>
+        <p>The  value of each league member is hidden from you until you click on it. You'll need to do some math to figure out the value of each additional league member after you've clicked the first one.</p>
+        <br>
+        <p>Each time the game starts, the game will change the value of the league members.</p>
+        <br>
+        <hr>
+        <br>
+        <p>
+            <h2 id = "enemy">The Enemy - Hyde</h2>
+        </p>
+        <br>
+        <img src = "./assets/images/hyde2.jpg" id = "hyde">
+        <br>
+        <p id = "computerCrystal"></p>
+        <br>
+        <p id = "score"></p>
+        <br>
+        <br>
+        <p id = "sum">Gentlemens Sum =</p>
+    </div>
+    <div align="center" class="container images">
+        <img src = "./assets/images/hunter.jpg" id = "crystal1" class = "goodGuys">
+        <img src = "./assets/images/vampire.jpg" id = "crystal2" class = "goodGuys">
+        <img src = "./assets/images/immortal.jpg" id = "crystal3" class = "goodGuys">
+        <img src = "./assets/images/thescientist.jpg" id = "crystal4" class = "goodGuys">
         </div>
-        <div class = "container">
-   
-            <br>
-            <p>Welcome to The League of Extraordinary Gentlman's Game. Here you will test your extraordinary brain power. Good luck in defeating the enemy.</p>
-                <br>
-            <p>
-                <h2>Game Instructions</h2>
-            </p>
-            <br>
-            <p>You will be given the enemy's random number at the start of the game. 
-
-                    <p>There are four league members below. By clicking on a league member you will add a spedific amount of points to your total score.</p>
-                    <br>
-                    <p>You win the game by matching your total score to the random number, you lose the game if your score goes above the random number. When you win or lose, the enemy will chose another random number.</p>
-                    <br>
-                    <p>The  value of each league member is hidden from you until you click on it. You'll need to do some math to figure out the value of each additional league member after you've clicked the first one.</p>
-                    <br>
-                    <p>Each time the game starts, the game will change the value of the league members.</p>
-            <br>
-            <hr>
-            <br>
-            <p>
-                <h2 id = "enemy">The Enemy - Hyde
-                </h2>
-            </p>
-            <br>
-            <img src = "./assets/images/hyde2.jpg" id = "hyde">
-            <br>
-            <p id = "computerCrystal">
-            </p><br>
-            <p id = "score"></p>
-            <br><br>
-
-                    <p id = "sum">Gentlemens Sum =</p>
-              
-        </div>
-        <div align="center" class="container images">
-            <img src = "./assets/images/hunter.jpg" id = "crystal1" class = "goodGuys">
-            <img src = "./assets/images/vampire.jpg" id = "crystal2" class = "goodGuys">
-            <img src = "./assets/images/immortal.jpg" id = "crystal3" class = "goodGuys">
-            <img src = "./assets/images/thescientist.jpg" id = "crystal4" class = "goodGuys">
-        </div>
-    
 <script type="text/javascript"src= "assets/javascript/game.js"></script>         
 </body>
 </html>

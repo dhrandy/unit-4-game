@@ -54,7 +54,6 @@ p {
     width: 12em; 
 }
 
-
 @media only screen and (max-width: 720px) {
 
     body {
@@ -87,5 +86,4 @@ p {
     .league {
         width:23em;
     }
-
 }
