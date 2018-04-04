@@ -28,8 +28,8 @@ p {
 
 .container {
     max-width: 80%;
-    margin-left:200px;
-    margin-right:200px;
+    margin-left:120px;
+    margin-right:120px;
     color: white;
 }
 
@@ -44,6 +44,7 @@ p {
 
 #sum {
     font-size: 25px;
+    margin-left: 10px;
     margin-bottom: 20px;
 }
 
@@ -58,7 +59,7 @@ p {
 }
 
 #goodGuys {
-    margin: 20px;
+    margin: 16px;
     
 }
 
