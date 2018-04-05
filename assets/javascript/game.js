@@ -55,6 +55,7 @@ function gentlemanClick(gentleman) {
         nextGame ();
     }
 
+    //this function runs when you win or lose
     function nextGame () {
         gentleman1 = Math.floor(Math.random() * 12) + 1;
         gentleman2 = Math.floor(Math.random() * 12) + 1;
@@ -64,12 +65,15 @@ function gentlemanClick(gentleman) {
         computerHyde = Math.floor(Math.random() * 120) + 19;
     }
 
+    //updates the score in the html
     htmlScore = //writes Score to html
         "<p>Wins: " + win + "</p>" +
         "<p>Losses: " + losses + "</p>";
 
     document.querySelector("#score").innerHTML = htmlScore;
 };
+
+//jQuery click funtions, this adds the characters to the random numbers
 $("#gentleman1").click(function() {
     gentlemanClick(gentleman1);
 });
