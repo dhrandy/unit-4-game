@@ -4,7 +4,7 @@ body {
     margin-right: auto;
     background: url('../images/background3.jpg');
     background-size: cover;
-    background-color: #0183eb;
+    background-color: #3a4c70;
     font-family: 'Pridi', serif;
 }
 
@@ -91,4 +91,5 @@ p {
     .league {
         width:23em;
     }
+    
 }

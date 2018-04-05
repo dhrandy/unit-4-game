@@ -25,7 +25,7 @@ while (gentleman1 == gentleman2 || gentleman1 == gentleman3 || gentleman1 == gen
     gentleman2 = Math.floor(Math.random() * 12) + 1;
     gentleman3 = Math.floor(Math.random() * 12) + 1;
     gentleman4 = Math.floor(Math.random() * 12) + 1;
-    console.log(gentleman1 + " " + gentleman2 + " " +  gentleman3 + " " +  gentleman4);
+    console.log(gentleman1 + " " + gentleman2 + " " +  gentleman3 + " " +  gentleman4); //initial random numbers
 }
 }
 
