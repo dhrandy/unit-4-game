@@ -17,12 +17,14 @@ function randomNumber() {
     Math.floor(Math.random() * 12) + 1;
 }
 
+
 //the while loop makes sure that no 2 numbers match for the player
 while (gentleman1 == gentleman2 || gentleman1 == gentleman3 || gentleman1 == gentleman4 || gentleman2 == gentleman1 || gentleman2 == gentleman3 || gentleman2 == gentleman4 || gentleman3 == gentleman1 || gentleman3 == gentleman2 || gentleman3 == gentleman4 || gentleman4 == gentleman1 || gentleman4 == gentleman2 || gentleman4 == gentleman3) {
     gentleman1 = Math.floor(Math.random() * 12) + 1;
     gentleman2 = Math.floor(Math.random() * 12) + 1;
     gentleman3 = Math.floor(Math.random() * 12) + 1;
     gentleman4 = Math.floor(Math.random() * 12) + 1;
+    console.log(gentleman1 + " " + gentleman2 + " " +  gentleman3 + " " +  gentleman4);
 }
 
 //Shows the initial win and loss score, which is 0 to 0.
@@ -31,6 +33,20 @@ var htmlScore =
     "<p>Losses: " + losses + "</p>";
 
 document.querySelector("#score").innerHTML = htmlScore;
+
+ //this function runs when you win or lose
+ function nextGame () {
+    gentleman1 = Math.floor(Math.random() * 12) + 1;
+    gentleman2 = Math.floor(Math.random() * 12) + 1;
+    gentleman3 = Math.floor(Math.random() * 12) + 1;
+    gentleman4 = Math.floor(Math.random() * 12) + 1;
+    console.log(gentleman1 + " " + gentleman2 + " " +  gentleman3 + " " +  gentleman4);
+    gentlemanScore = [0]; 
+    computerHyde = Math.floor(Math.random() * 120) + 19;
+    var htmlComputerHyde = //writes computerHyde to html
+        "<p>Enemy's Number # " + computerHyde + "</p>";
+    document.querySelector("#computerHyde").innerHTML = htmlComputerHyde;
+}
 
 //this function runs when you click on a gentleman
 function gentlemanClick(gentleman) {
@@ -44,26 +60,14 @@ function gentlemanClick(gentleman) {
     
     //this runs if the sum and gentleman is equal
     if (sum === computerHyde) {
-        win++;
+        win++; 
         nextGame ();
 
     } else if (sum > computerHyde) {
-        losses++; // add a loss if user goes over computer random number
+        losses++; 
         nextGame ();
         
-
-    //this function runs when you win or lose
-    function nextGame () {
-        gentleman1 = Math.floor(Math.random() * 12) + 1;
-        gentleman2 = Math.floor(Math.random() * 12) + 1;
-        gentleman3 = Math.floor(Math.random() * 12) + 1;
-        gentleman4 = Math.floor(Math.random() * 12) + 1;
-        gentlemanScore = [0]; 
-        computerHyde = Math.floor(Math.random() * 120) + 19;
-        var htmlComputerHyde = //writes computerHyde to html
-            "<p>Enemy's Number # " + computerHyde + "</p>";
-        document.querySelector("#computerHyde").innerHTML = htmlComputerHyde;
-    }
+   
     }
 
     //updates the score in the html
