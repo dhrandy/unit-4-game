@@ -45,15 +45,12 @@ function gentlemanClick(gentleman) {
     //this runs if the sum and gentleman is equal
     if (sum === computerHyde) {
         win++;
-        var htmlComputerHyde = //writes computerHyde to html
-            "<p>Enemy's Number # " + computerHyde + "</p>";
-        document.querySelector("#computerHyde").innerHTML = htmlComputerHyde;
         nextGame ();
 
     } else if (sum > computerHyde) {
         losses++; // add a loss if user goes over computer random number
         nextGame ();
-    }
+        
 
     //this function runs when you win or lose
     function nextGame () {
@@ -63,6 +60,10 @@ function gentlemanClick(gentleman) {
         gentleman4 = Math.floor(Math.random() * 12) + 1;
         gentlemanScore = [0]; 
         computerHyde = Math.floor(Math.random() * 120) + 19;
+        var htmlComputerHyde = //writes computerHyde to html
+            "<p>Enemy's Number # " + computerHyde + "</p>";
+        document.querySelector("#computerHyde").innerHTML = htmlComputerHyde;
+    }
     }
 
     //updates the score in the html
