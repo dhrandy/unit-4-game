@@ -24,7 +24,9 @@ p {
     color: white;
 }
 
-#computerCrystal {
+#computerHyde {
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 3px;
     font-size: 30px;
     text-align: center;
 }
@@ -46,6 +48,9 @@ p {
 }
 
 #enemy {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bold;
+    letter-spacing: 3px;
     text-align: center;
 }
 
