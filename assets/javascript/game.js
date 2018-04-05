@@ -16,15 +16,17 @@ document.querySelector("#computerHyde").innerHTML = htmlComputerHyde;
 function randomNumber() {
     Math.floor(Math.random() * 12) + 1;
 }
-
+noMatches(); //calls the noMatches function
 
 //the while loop makes sure that no 2 numbers match for the player
+function noMatches () {
 while (gentleman1 == gentleman2 || gentleman1 == gentleman3 || gentleman1 == gentleman4 || gentleman2 == gentleman1 || gentleman2 == gentleman3 || gentleman2 == gentleman4 || gentleman3 == gentleman1 || gentleman3 == gentleman2 || gentleman3 == gentleman4 || gentleman4 == gentleman1 || gentleman4 == gentleman2 || gentleman4 == gentleman3) {
     gentleman1 = Math.floor(Math.random() * 12) + 1;
     gentleman2 = Math.floor(Math.random() * 12) + 1;
     gentleman3 = Math.floor(Math.random() * 12) + 1;
     gentleman4 = Math.floor(Math.random() * 12) + 1;
     console.log(gentleman1 + " " + gentleman2 + " " +  gentleman3 + " " +  gentleman4);
+}
 }
 
 //Shows the initial win and loss score, which is 0 to 0.
@@ -40,7 +42,8 @@ document.querySelector("#score").innerHTML = htmlScore;
     gentleman2 = Math.floor(Math.random() * 12) + 1;
     gentleman3 = Math.floor(Math.random() * 12) + 1;
     gentleman4 = Math.floor(Math.random() * 12) + 1;
-    console.log(gentleman1 + " " + gentleman2 + " " +  gentleman3 + " " +  gentleman4);
+    noMatches(); //calls the noMatches function
+    console.log(gentleman1 + " " + gentleman2 + " " +  gentleman3 + " " +  gentleman4); // checking the random numbers
     gentlemanScore = [0]; 
     computerHyde = Math.floor(Math.random() * 120) + 19;
     var htmlComputerHyde = //writes computerHyde to html
@@ -66,8 +69,6 @@ function gentlemanClick(gentleman) {
     } else if (sum > computerHyde) {
         losses++; 
         nextGame ();
-        
-   
     }
 
     //updates the score in the html
