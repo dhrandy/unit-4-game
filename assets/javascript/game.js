@@ -80,10 +80,24 @@ function gentlemanClick(gentleman) {
 };
 
 //jQuery click funtions, this adds the characters to the random numbers
-$("#gentleman1").click(function() {
-    gentlemanClick(gentleman1);
+$(".goodGuys").on('click',function() {
+    if ( $(this).attr("value") === "gentleman1") {
+        gentlemanClick(gentleman1);
+    } else if ( $(this).attr("value") === "gentleman2") {
+        gentlemanClick(gentleman2);
+    } else if ( $(this).attr("value") === "gentleman3") {
+        gentlemanClick(gentleman3);  
+    } else if ( $(this).attr("value") === "gentleman4") {
+        gentlemanClick(gentleman4);  
+    }
+    console.log (gentlemanScore);
 });
 
+/* 
+// The old way I was attaching the clicked numbers. Placed them all in once click function above.
+$("#gentleman2").click(function() {
+    gentlemanClick(gentleman2);
+    
 $("#gentleman2").click(function() {
     gentlemanClick(gentleman2);
 });
@@ -94,4 +108,4 @@ $("#gentleman3").click(function() {
 
 $("#gentleman4").click(function() {
     gentlemanClick(gentleman4);
-});
+}); */
