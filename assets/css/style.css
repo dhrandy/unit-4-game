@@ -59,6 +59,14 @@ p {
     width: 12em; 
 }
 
+footer {
+    height: 16px;
+    text-align: center;
+    background-color: #778899;
+    color: white;
+    padding: 18px;
+}
+
 @media only screen and (max-width: 720px) {
 
     body {
@@ -91,5 +99,4 @@ p {
     .league {
         width:23em;
     }
-
 }
