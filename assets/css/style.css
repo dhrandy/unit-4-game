@@ -54,6 +54,20 @@ p {
     text-align: center;
 }
 
+.transition {
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#gentleman1, #gentleman2, #gentleman3, #gentleman4 {
+    -webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+}
+
 .goodGuys {
     margin: 16px;
     width: 12em; 
@@ -67,18 +81,14 @@ footer {
     padding: 18px;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 900px) {
 
     body {
         max-width: 630px;
         width: 102%;
     }
 
-    h2 {
-        margin-left: 15px;
-    }
-
-    #sum {
+    h2, #sum {
         margin-left: 15px;
     }
     
